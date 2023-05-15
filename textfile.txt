@@ -1,0 +1,25 @@
+CREATE TABLE `work` (
+  `Id` int NOT NULL AUTO_INCREMENT,
+  `No_of_workers_req` int DEFAULT NULL,
+  `Start_date` varchar(45) DEFAULT NULL,
+  `Requirement` varchar(45) DEFAULT NULL,
+  `Priority` int DEFAULT NULL,
+  `Status` varchar(45) DEFAULT 'Not Started',
+  `Duration` int DEFAULT '0',
+  `workers_allotted` varchar(45) DEFAULT '',
+  `no_of_workers_alloted` int DEFAULT '0',
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+
+CREATE TABLE `worker` (
+  `Id` int NOT NULL AUTO_INCREMENT,
+  `Name` varchar(45) NOT NULL,
+  `Mobile_number` varchar(45) DEFAULT NULL,
+  `Role` varchar(45) DEFAULT NULL,
+  `Skill_level` int DEFAULT NULL,
+  `Availability` varchar(45) DEFAULT '1111',
+  `No_of_hours_workers` int DEFAULT '0',
+  `works_completed` varchar(45) DEFAULT 'None',
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
