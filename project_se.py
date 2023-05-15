@@ -19,10 +19,10 @@ from tkinter import ttk
 import datetime as dt
 from datetime import date 
 
-connection = mysql.connector.connect(host='sukeerthis-MacBook-Air.local',
-                                         database='SE7',
-                                         user='Sukeerthi',
-                                         password='Sukeerthi@26')
+connection = mysql.connector.connect(host='localhost',
+                                         database='wms',
+                                         user='root',
+                                         password='sudeeksha@23')
 
 
 
